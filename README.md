@@ -18,7 +18,7 @@ Investor Relation: Learn about our company's financial performance, recent devel
 
 # Lucid Chart
 
-![lucid chart](https://github.com/jiamliu/handymanpro.com/assets/139939637/7ecc0264-4f14-4c8f-b916-45528bc5f302)
+<img width="731" alt="lucid chart" src="https://github.com/jiamliu/handymanpro.com/assets/139939637/fee4ef09-2959-4c10-8828-eea7d55aac5c">
 
 # Technologies Used
 
