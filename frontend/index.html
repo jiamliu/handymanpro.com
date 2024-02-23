@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index-style.css">
+    <title>HandymanPro</title>
+</head>
+<body>
+    <h1>HandymanPro.com</h1>
+    <h2>Proudly Serving DFW Area Since 2024</h2>
+    <div class="container">
+        <div class="button-container">
+            <a href="about.html" class="button">About Us</a>
+            <a href="commonissue.html" class="button">Common Issues</a>
+            <a href="handymanavailable.html" class="button">Handyman Available</a>
+            <a href="toolstobuy.html" class="button">Tools To Buy</a>
+            <a href="hconnect.html" class="button">HConnect</a>
+            <a href="partners.html" class="button">Become Our Partners</a>
+        </div>
+    </div>
+    <div class="image-slider">
+        <div class="slides">
+            <div class="slide" onclick="toggleDescription(this)">
+                <img src="indeximg1.jpeg" alt="Image 1">
+                <div class="description">Elevating your home maintenance with expert tutorials, premium tools, and professional handyman services. Your premier destination for quality repairs and exceptional service.</div>
+            </div>
+            <div class="slide" onclick="toggleDescription(this)">
+                <img src="indeximg2.jpeg" alt="Image 2">
+                <div class="description">Curating premium tools for discerning craftsmen. Our hand-selected collection ensures reliability and precision, empowering professionals and DIY enthusiasts alike. Trust in quality, trust in us.</div>
+            </div>
+            <div class="slide" onclick="toggleDescription(this)">
+                <img src="indeximg3.jpeg" alt="Image 3">
+                <div class="description">Introducing HConnect by HandymanPro.com: Seamlessly connect with skilled professionals tailored to your home needs. Let us match you with trusted experts for hassle-free repairs.</div>
+            </div>
+        </div>
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

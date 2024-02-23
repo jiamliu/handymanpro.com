@@ -1,0 +1,136 @@
+
+.slide {
+  position: relative;
+  display: inline-block;
+}
+
+.description {
+  position: absolute;
+  bottom: -70%;
+  left: 20%;
+  transform: translateX(-30%);
+  max-width: 80%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: white;
+  padding: 50px 30px 0 50px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+.slide:hover .description {
+  opacity: 1;
+}
+
+
+body {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin: 0 auto;
+  max-width: 800px;
+  background-size: cover;
+  background-color:black;
+}
+
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  font-size: 55px;
+  color: rgb(176, 160, 66);
+  margin: 50px 0 0 0;
+  font-weight:30;
+  background-color:black;
+}
+
+h2 {
+  text-align: center;
+  color: rgb(176, 160, 66);
+  margin: 0px 0 30px 0;
+  font-weight:30;
+  background-color: black;
+}
+
+.container {
+  text-align: center;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  margin-top: -30px;
+}
+
+.button-container {
+  display: inline-block;
+}
+
+.button {
+  display: inline;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 14px;
+  margin: 10px; 
+  padding: 9px 13px;
+  border: none; 
+  background-color: transparent;
+  color: rgb(176, 160, 66);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  text-decoration: none; 
+  background-color: black;
+}
+
+.button:hover {
+  background-color: transparent;
+}
+
+.image-slider {
+  width: 400px;
+  height: 600px;
+  margin: auto;
+}
+
+.slides {
+  display: flex;
+}
+
+.slides img {
+  width: 800px;
+  height: 500px;
+  display: block;
+  margin: 0 0 0 -200px;
+  margin-top: -140px;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 500px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  margin-top: -320px;
+}
+
+.dot.active {
+  background-color: #717171;
+}
+

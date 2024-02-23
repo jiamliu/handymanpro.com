@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hconnect.css">
+    <script src="script.js"></script>
+    <title>HConnect - HandymanPro</title>
+</head>
+<body>
+    <div class="container">
+        <h1>HConnect</h1>
+        
+        <section>
+            <h2>What is HConnect?</h2>
+            <div class="image-container">
+                <img src="https://handymanoklahomacity.com/wp-content/uploads/2022/02/Choctaw-Handyman.jpeg" alt="HConnect Image">
+            </div>
+            <p>HConnect is our exclusive service designed to connect homeowners with qualified handymen for their home maintenance and repair needs. Whether you're facing a minor fix or a major renovation project, HConnect ensures access to skilled professionals for reliable solutions.</p>
+        </section>
+
+        <section>
+            <h2>Submit Your Information</h2>
+            <p>Ready to get started with HConnect? Fill out the form below with your contact information and details about the project you need assistance with. Our team will match you with a qualified handyman who can address your needs promptly and efficiently.</p>
+            
+            <form action="submit-info.php" method="post">
+                <div class="form-container">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="phone-number">Phone Number:</label>
+                    <input type="tel" id="phone-number" name="phone-number" required><br><br>
+
+                    <label for="budget">Budget:</label>
+                    <input type="text" id="budget" name="budget" required><br><br>
+                    
+                    <label for="project-details">Project Details:</label><br>
+                    <textarea id="project-details" name="project-details" rows="4" cols="50" required></textarea><br><br>
+                    
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

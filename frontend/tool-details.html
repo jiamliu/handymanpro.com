@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tool Details</title>
+    <link rel="stylesheet" href="tool-details.css"> 
+</head>
+<body>
+    <h1>Tool Details</h1>
+    <h2>Use Promo Code handymanpro2024 for 5% off</h2>
+    <div id="tool-details"></div>
+    
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script>
+        async function fetchToolDetails() {
+            try {
+                const urlParams = new URLSearchParams(window.location.search);
+                const toolId = urlParams.get('id');
+
+                const response = await axios.get(`http://localhost:5001/tools/${toolId}`);
+                const tool = response.data;
+
+                displayToolDetails(tool);
+            } catch (error) {
+                console.error('Error fetching tool details:', error);
+            }
+        }
+
+        function displayToolDetails(tool) {
+            const toolDetailsContainer = document.getElementById('tool-details');
+            if (tool) {
+                const detailsHTML = `
+                    <h2>${tool.tools}</h2>
+                    <div class="tool-image">
+                        <img src="${tool.image}" alt="${tool.tools}">
+                    </div>
+                    <p>${tool.description}</p>
+                    <p>Purchase Link: <a href="${tool.purchase_link}" target="_blank">${tool.purchase_link}</a></p>
+                `;
+                toolDetailsContainer.innerHTML = detailsHTML;
+            } else {
+                toolDetailsContainer.innerHTML = '<p>Error: Tool details not available</p>';
+            }
+        }
+
+        fetchToolDetails();
+    </script>
+</body>
+</html>
